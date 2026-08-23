@@ -146,13 +146,14 @@
     color: var(--muted);
   }
 
-  footer {
-    color: var(--muted);
-    font-size: 0.9rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
+  /* ---- Contact ---- */
+  .contact { margin: 0; }
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
   }
-  footer a { color: var(--accent); }
+  .contact a:hover { text-decoration: underline; }
 
   /* Marks placeholder text so it's obvious in-browser what still needs writing */
   .todo {
@@ -346,15 +347,17 @@
   </section>
 
   <!-- ============================================
-       FOOTER: as much or as little contact info
-       as you're comfortable with. Delete lines
-       you don't want.
+       CONTACT: the heading is a Starship Troopers
+       riff (the FedNet sign-off). The link itself
+       stays plain, so it reads as a straight
+       invitation to anyone who misses the joke.
        ============================================ -->
-  <footer>
-    <p>
-      <a href="https://uk.linkedin.com/in/steviom" target="_blank" rel="noopener">LinkedIn</a>
+  <section id="contact">
+    <h2>Would you like to know more?</h2>
+    <p class="contact">
+      <a href="https://uk.linkedin.com/in/steviom" target="_blank" rel="noopener">LinkedIn →</a>
     </p>
-  </footer>
+  </section>
 
 </div>
 </body>
