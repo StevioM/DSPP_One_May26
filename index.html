@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StevioM — Data Science Portfolio</title>
+<title>StevioM: Data Science Portfolio</title>
 <style>
   /* ---- Basic theme-aware colours ---- */
   :root {
@@ -66,6 +66,37 @@
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.4rem;
     margin-bottom: 1rem;
+  }
+
+  /* ---- Tools ---- */
+  .tools {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .tools li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+  }
+  .tools svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--accent);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
 
   /* ---- Project cards ---- */
@@ -139,7 +170,7 @@
 <div class="wrap">
 
   <!-- ============================================
-       HEADER — who you are, at a glance
+       HEADER: who you are, at a glance
        ============================================ -->
   <header>
     <img src="assets/Headshot.jpg" alt="StevioM">
@@ -150,38 +181,118 @@
   </header>
 
   <!-- ============================================
-       ABOUT — write this yourself, 2-4 sentences.
-       Who you are, what you're studying, what
-       you're aiming for. This is the bit that
-       should sound like you, not like AI.
+       ABOUT: who you are, what you're studying,
+       what you're aiming for. This is the bit that
+       has to sound like you, not like AI. Keep it
+       first-person and keep the dry bits in.
        ============================================ -->
   <section id="about">
     <h2>About</h2>
     <p>
-      <span class="todo">TODO (write this yourself):</span>
-      A couple of sentences on who you are — e.g. what you do day-to-day,
-      what the BSc (Hons) Data Science degree apprenticeship involves, and
-      what got you into data science.
+      I've always enjoyed playing with data and visuals, and I've been lucky
+      enough to land roles that let me do that and engineer creative solutions
+      along the way.
+    </p>
+    <p>
+      Day to day I work in revenue operations at a hospitality technology
+      company, where most of my week goes on Salesforce, billing data, and the
+      unglamorous business of making commercial numbers agree with each other.
+    </p>
+    <p>
+      The formal side came about because a good friend was adamant about
+      getting data science certified, and I tagged along for the ride. I'm at
+      the end of year one now, having covered data infrastructure and tools,
+      data engineering, and data visualisation and dashboards. I'm currently on
+      the first professional practice module, working with public datasets.
     </p>
   </section>
 
   <!-- ============================================
-       WHAT THIS GITHUB COVERS — sets expectations
+       WHAT THIS GITHUB COVERS: sets expectations
        for anyone landing here (assessor, employer,
        recruiter).
        ============================================ -->
   <section id="what-this-covers">
     <h2>What's here</h2>
     <p>
-      <span class="todo">TODO (write this yourself):</span>
-      A sentence or two explaining that this GitHub hosts your ongoing data
-      science portfolio — built up project by project as part of your degree
-      apprenticeship — and briefly what visitors will find below.
+      This is the front door to my data science portfolio. It grows project by
+      project as I work through the apprenticeship, so expect it to be added to
+      rather than finished.
+    </p>
+    <p>
+      Each card below links to its own repository, where you'll find the
+      write-up, the data, and enough of the working that you could check the
+      numbers yourself. Some of it is coursework. Some of it is things I built
+      because I wanted them to exist.
     </p>
   </section>
 
   <!-- ============================================
-       PROJECTS — one card per repo. Add a new
+       TOOLS: what I actually work in.
+       Icons are hand-drawn inline SVG on a shared
+       24x24 grid, stroked in currentColor so they
+       follow the accent colour and both themes.
+       To add a tool, copy a <li> and swap the paths.
+       ============================================ -->
+  <section id="tools">
+    <h2>Tools</h2>
+    <ul class="tools">
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2"/>
+          <path d="M3 9.5h18M9 9.5V20M15 9.5V20"/>
+        </svg>
+        Excel
+      </li>
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 20h18"/>
+          <path d="M6.5 20v-5M12 20v-9M17.5 20v-13"/>
+        </svg>
+        Power BI
+      </li>
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.5 7.5 4 12l4.5 4.5M15.5 7.5 20 12l-4.5 4.5M13.5 5.5l-3 13"/>
+        </svg>
+        VBA
+      </li>
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="5.5" cy="6.5" r="2.5"/>
+          <circle cx="5.5" cy="17.5" r="2.5"/>
+          <circle cx="18.5" cy="12" r="2.5"/>
+          <path d="M8 7.6l8 3.3M8 16.4l8-3.3"/>
+        </svg>
+        Alteryx
+      </li>
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <ellipse cx="12" cy="6" rx="7.5" ry="3"/>
+          <path d="M4.5 6v12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3V6"/>
+          <path d="M4.5 12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3"/>
+        </svg>
+        SQL
+      </li>
+
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="16" rx="2"/>
+          <path d="M7.5 9.5l3 2.5-3 2.5M13 15h4"/>
+        </svg>
+        Claude Code
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ============================================
+       PROJECTS: one card per repo. Add a new
        card here each time you publish a project.
        ============================================ -->
   <section id="projects">
@@ -210,30 +321,38 @@
         </div>
       </div>
 
-      <div class="card pending">
-        <span class="badge">Coming soon</span>
-        <h3>Data Science Project</h3>
+      <div class="card">
+        <span class="badge">BSc coursework · Alteryx</span>
+        <h3>Do Pokemon stat archetypes actually exist?</h3>
+        <blockquote class="card-quote">
+          "The legendary tier is not legendary."
+          <span class="card-quote-source">One of the findings, from a model that was never told which Pokemon were legendary.</span>
+        </blockquote>
         <p>
-          <span class="todo">TODO:</span> one line on the dataset/topic
-          you're choosing for the BPP Data Science Professional Practice
-          assessment (e.g. "exploring [topic] using a public [source]
-          dataset"). Update this card with a repo link once it's up.
+          K-means clustering of 386 Generation 1-3 Pokemon on their six base
+          stats, with no type, generation or legendary flag given to the model.
+          Four of the five archetypes competitive players recognise came back
+          out of the numbers alone. The validity measures preferred k = 2 over
+          the k = 5 the theory predicted, which is reported rather than tidied
+          away. The workflow, every tool setting and the result tables are all
+          in the repo, so the numbers can be checked without Alteryx.
         </p>
+        <div class="links">
+          <a href="https://github.com/StevioM/pokemon-clustering" target="_blank" rel="noopener">Repo →</a>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- ============================================
-       FOOTER — as much or as little contact info
+       FOOTER: as much or as little contact info
        as you're comfortable with. Delete lines
        you don't want.
        ============================================ -->
   <footer>
     <p>
-      <span class="todo">TODO (optional):</span>
-      Add links you're comfortable making public — e.g. LinkedIn, an email
-      address, or just leave this section out entirely.
+      <a href="https://uk.linkedin.com/in/steviom" target="_blank" rel="noopener">LinkedIn</a>
     </p>
   </footer>
 
