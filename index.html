@@ -101,6 +101,19 @@
     border-radius: 999px;
     margin-bottom: 0.5rem;
   }
+  .card-quote {
+    font-style: italic;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.75rem;
+    margin: 0 0 0.75rem;
+  }
+  .card-quote-source {
+    display: block;
+    font-style: normal;
+    font-size: 0.8rem;
+    margin-top: 0.35rem;
+    color: var(--muted);
+  }
 
   footer {
     color: var(--muted);
@@ -176,13 +189,20 @@
     <div class="cards">
 
       <div class="card">
+        <span class="badge">Built with heavy AI assistance</span>
         <h3>Aldi Shopping List</h3>
+        <blockquote class="card-quote">
+          "My wife was fed up writing the same Aldi list every week. I was
+          fed up wandering the wrong aisles. This app is our peace treaty."
+          <span class="card-quote-source">The app's own onboarding screen, shown the first time you open it.</span>
+        </blockquote>
         <p>
-          A React Progressive Web App for planning weekly Aldi shops —
-          live product, actively used and iterated on.
-          <span class="todo">TODO: add a sentence on what you learned
-          building it / what makes it interesting from a data or
-          engineering angle.</span>
+          A React Progressive Web App for planning the weekly Aldi shop,
+          organised by aisle, with product photos, synced across devices,
+          and in regular use at home. I'm not a coder: this was built
+          with heavy AI assistance (Claude Code), with me driving the
+          product decisions, the testing, and what problem it was meant
+          to solve.
         </p>
         <div class="links">
           <a href="https://github.com/StevioM/aldi-shop" target="_blank" rel="noopener">Repo →</a>
